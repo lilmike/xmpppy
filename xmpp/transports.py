@@ -37,8 +37,8 @@ from errno import ECONNREFUSED
 import random
 import gzip
 from io import StringIO
-from urllib import urlparse
-urlparse = urlparse.urlparse
+from urllib import parse
+urlparse = parse.urlparse
 
 # determine which DNS resolution library is available
 HAVE_DNSPYTHON = False
