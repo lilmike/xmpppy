@@ -21,7 +21,8 @@ Can be used both for client and transport authentication.
 
 from .protocol import *
 from .client import PlugIn
-import base64,random,dispatcher,re
+import base64,random,re
+from . import dispatcher
 
 from hashlib import md5,sha1
 def HH(some): return md5(some).hexdigest()
